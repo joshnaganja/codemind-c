@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,flag=0,count=0;
+    int i,n,c1=0,c2=0;
     scanf("%d",&n);
     int a[n];
     for(i=0;i<n;i++)
@@ -10,22 +10,19 @@ int main()
     }
     for(i=0;i<n;i++)
     {
-        if(i%2!=0)
+        if(a[i]%2==0 && i%2==0)
         {
-            if(a[i]%2!=0)
-            {
-                flag=flag+1;
-            }
+            c1=c1+1;
         }
     }
     for(i=0;i<n;i++)
     {
-        if(a[i]%2!=0)
+        if(a[i]%2==0)
         {
-            count=count+1;
+            c2=c2+1;
         }
     }
-    if(flag==count)
+    if(c1==c2)
     {
         printf("True");
     }
