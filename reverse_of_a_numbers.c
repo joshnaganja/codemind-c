@@ -1,9 +1,10 @@
 #include<stdio.h>
 int main()
 {
-    int r,s=0,n,t;
+    int n,t,s,r;
     scanf("%d",&n);
     t=n;
+    s=0;
     while(n!=0)
     {
         r=n%10;
