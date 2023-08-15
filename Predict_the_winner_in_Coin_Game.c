@@ -3,7 +3,7 @@ int main()
 {
     int m,n;
     scanf("%d%d",&m,&n);
-    if(m%2==0||n%2==0)
+    if(m%2==0 || n%2==0)
     {
         printf("Player 1");
     }
